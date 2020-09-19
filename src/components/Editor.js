@@ -23,7 +23,8 @@ export default function Editor( props ) {
             <div className="editor-title">
                 {displayName}
                 <button>O/C</button>
-                <ControlledEditor
+            </div>
+            <ControlledEditor
                   onBeforeChange={handleChange}
                   value={value}
                   className="code-mirror-wrapper"
@@ -34,8 +35,7 @@ export default function Editor( props ) {
                       lineNumbers: true,
                       theme: 'material'
                   }}
-                />
-            </div>
+            />
         </div>
     )
 }
